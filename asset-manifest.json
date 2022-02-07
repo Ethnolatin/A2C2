@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/A2C2/static/css/main.7ac44289.css",
+    "main.js": "/A2C2/static/js/main.d91644b8.js",
+    "static/js/787.9412e4b6.chunk.js": "/A2C2/static/js/787.9412e4b6.chunk.js",
+    "static/media/entete.png": "/A2C2/static/media/entete.53a5c2d0ac60abf3c34a.png",
+    "index.html": "/A2C2/index.html",
+    "main.7ac44289.css.map": "/A2C2/static/css/main.7ac44289.css.map",
+    "main.d91644b8.js.map": "/A2C2/static/js/main.d91644b8.js.map",
+    "787.9412e4b6.chunk.js.map": "/A2C2/static/js/787.9412e4b6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ac44289.css",
+    "static/js/main.d91644b8.js"
+  ]
+}
