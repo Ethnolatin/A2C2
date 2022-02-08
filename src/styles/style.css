@@ -1,8 +1,18 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif, "google";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+body button, body input[type=submit], body input[type=reset] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .entete {
@@ -16,6 +26,62 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+nav {
+  position: relative;
+  background: #ccc;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  z-index: 12;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: left;
+  }
+}
+
+.navLink {
+  color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 14.5px 15px;
+  height: 100%;
+  cursor: pointer;
+}
+.navLink:hover {
+  background: #03A5AB;
+}
+.navLink:focus {
+  background: #03A5AB;
+}
+
+.bars {
+  display: none;
+  color: black;
+  text-align: left;
+  padding: 0 1rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .bars {
+    display: block;
+  }
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  margin-right: -24px;
+}
+@media screen and (max-width: 768px) {
+  .navMenu {
+    display: none;
   }
 }
 
