@@ -45,6 +45,32 @@ nav {
     }
 }
 
+.navMenu {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        top: 50px;
+        left: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        background: #ccc;
+        animation: 0.5s move ease-out;
+        animation-fill-mode: both;
+    }
+}
+
+.navButton {
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        border-bottom: 1px solid rgba(33,33,33,.1);
+    }
+    &:hover {
+        background: #03A5AB;
+    }
+}
+
 .navLink {
     color: black;
     display: flex;
@@ -53,34 +79,78 @@ nav {
     padding: 14.5px 15px;
     height: 100%;
     cursor: pointer;
-    &:hover{
+    &:focus {
         background: #03A5AB;
     }
-    &:focus{
+    &.active {
         background: #03A5AB;
     }
-    
 }
 
-.bars {
+.hamburger {
     display: none;
-    color: black;
-    text-align: left;
-    padding: 0 1rem;
-    font-size: 1.8rem;
-    cursor: pointer;
     @media screen and (max-width: 768px) {
         display: block;
+        height: 25px;
+        width: 30px;
+        margin-left: 1rem;
     }
 }
 
-.navMenu {
-    display: flex;
-    align-items: center;
-    margin-right: -24px;
-  
-    @media screen and (max-width: 768px) {
-      display: none;
+.threeBars {
+    position: relative;
+    .bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background: #000;
+        transition: all 0.3s ease;
+        &:nth-child(1) {
+            transform: translateY(-8px) rotate(0deg);
+        }
+        &:nth-child(3) {
+            transform: translateY(8px)rotate(0deg);
+        }
     }
+    &.arrow {
+        .bar:nth-child(1) {
+            transform-origin: left center;
+            transform: translateY(0px) rotate(405deg);
+            width: 12px;
+            }
+        .bar:nth-child(3) {
+            transform-origin: left center;
+            transform: translateY(0px) rotate(315deg);
+            width: 12px;
+        }   
+        .bar:nth-child(2) {
+            transform-origin: center center;
+            transform: translateY(-0%) rotate(180deg);
+        }
+    }
+}
+
+@keyframes comesIn {
+    0% { left: -20rem; }
+    25% { left: 4rem; }
+    50% { left: 0.5rem; }
+    75% { left: 1.25rem; }
+    100% { left: 1rem; }
+}
+
+@keyframes comesOut {
+    0% { left: 1rem; }
+    35% { left: 1.5rem; }
+    100% { left: -20rem; }
+}
+
+.comesIn {
+    animation-name: comesIn;
+}
+
+.comesOut {
+    animation-name: comesOut;
 }
 
