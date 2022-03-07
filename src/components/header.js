@@ -5,7 +5,7 @@ import enteteSm from '../images/enteteSm.png';
 const Header = () => {
     return (
         <header>
-            <Link to="/">
+            <Link to="/A2C2">
                 <img src={entete} className="entete" alt="en-tête" />
                 <img src={enteteSm} className="entete-small" alt="en-tête" />
             </Link>

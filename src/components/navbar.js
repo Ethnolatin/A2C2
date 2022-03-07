@@ -8,7 +8,7 @@ const Navbar = () => {
     }
 
 const navLinks = [
-    { page: "/", title: "Atelier A²C²"},
+    { page: "/A2C2", title: "Atelier A²C²"},
     { page: "/archi", title: "Architecture"},
     { page: "/aventure", title: "Aventure"},
     { page: "/couture", title: "Couture"},

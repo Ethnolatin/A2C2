@@ -1,7 +1,7 @@
 import Header from "./components/header";
 import Navbar from "./components/navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from './pages';
+import Home from './pages/index';
 import About from './pages/about';
 import Archi from './pages/archi';
 import Aventure from './pages/aventure';
@@ -16,7 +16,7 @@ function App() {
         <Header />
         <Navbar />
         <Routes>
-            <Route path="/" exact element={ <Home /> } />
+            <Route path="/A2C2" element={ <Home /> } />
             <Route path="/about" element={ <About /> } />
             <Route path="/archi" element={ <Archi /> } />
             <Route path="/aventure" element={ <Aventure /> } />
