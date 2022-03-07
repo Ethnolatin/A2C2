@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink as Link } from "react-router-dom";
 
 const Navbar = () => {
-    const [navListDisplay, setNavListDisplay] = useState(true)
+    const [navListDisplay, setNavListDisplay] = useState(false)
     const toggleNavList = () => {
         setNavListDisplay(!navListDisplay);
     }

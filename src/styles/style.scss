@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    color: #454545;
 
     font-family: 'Roboto', sans-serif, 'google';
     -webkit-font-smoothing: antialiased;
@@ -17,9 +18,49 @@ body {
     }
 }
 
+main {
+    max-width: 1080px;
+    margin: auto;
+    padding: 1rem 2rem;
+    line-height: 1.5rem;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.25rem;
+    color: #03A5AB;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+p {
+    padding-top: 0.5rem;
+}
+
+strong {
+    color: #03A5AB;
+}
+
 .entete {
     width: 100%;
     height: auto;
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
+    &-small {
+        display: none;
+        @media screen and (max-width: 600px) {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.signature {
+    text-align: right;
 }
 
 @keyframes App-logo-spin {
@@ -28,6 +69,47 @@ body {
     }
     to {
         transform: rotate(360deg);
+    }
+}
+
+.container {
+    display: flex;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.logosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    justify-content: space-evenly;
+    min-width: 60%;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        flex-grow: 1;
+        max-width: 100%;
+}
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+    
+.logo {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.textContainer {
+    // flex-grow: 2;
+    width: 40%;
+    @media screen and (max-width: 768px) {
+        flex-grow: 1;
+        width: 100%;
     }
 }
 
@@ -44,6 +126,8 @@ nav {
         justify-content: left;
     }
 }
+
+
 
 .navMenu {
     display: flex;
@@ -129,6 +213,32 @@ nav {
             transform-origin: center center;
             transform: translateY(-0%) rotate(180deg);
         }
+    }
+}
+
+.socialNetworksContainer {
+    display: flex;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.socialNetworksIcons {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.socialNetworkLink {
+    width: 3rem;
+    height: auto;
+    color: #03A5AB;
+    &:hover {
+        cursor: pointer;
+        color: #454545
     }
 }
 
