@@ -3,6 +3,8 @@ import aventure from '../images/aventure.png';
 import couture from '../images/couture.png';
 import comedie from '../images/comedie.png';
 import { FaFacebookSquare, FaLinkedin, FaInstagramSquare } from 'react-icons/fa';
+import { NavLink as Link } from "react-router-dom";
+
 
 const Home = () => {
     return (
@@ -43,9 +45,10 @@ const Home = () => {
                     </p>
                 </div>
             </div>
+            <hr />
             <div className="socialNetworksContainer">
                 <h2>
-                    Retrouvez les actualités en direct sur les réseaux sociaux :
+                    Retrouvez mon actualité en direct sur les réseaux sociaux :
                 </h2>
                 <div className="socialNetworksIcons">
                     <a href="https://www.facebook.com/Slasheuse-A²C²-108214664767968" target="_blank" rel="noreferrer">
@@ -58,7 +61,16 @@ const Home = () => {
                         <FaInstagramSquare className="socialNetworkLink" />
                     </a>
                 </div>
-                
+            </div>
+            <hr />
+            <div className="container">
+                <Link
+                    className="linkButton"
+                    to="/contact"
+                    target="_blank"
+                >
+                    Pour toute demande, contactez-moi
+                </Link>
             </div>
         </main>
     )

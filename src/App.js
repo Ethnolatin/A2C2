@@ -8,22 +8,24 @@ import Aventure from './pages/aventure';
 import Comedie from './pages/comedie';
 import Couture from './pages/couture';
 import Admin from './pages/admin';
+import Contact from './pages/contact';
 
 
 function App() {
     return (
         <Router>
-        <Header />
-        <Navbar />
-        <Routes>
-            <Route path="/A2C2" element={ <Home /> } />
-            <Route path="/about" element={ <About /> } />
-            <Route path="/archi" element={ <Archi /> } />
-            <Route path="/aventure" element={ <Aventure /> } />
-            <Route path="/comedie" element={ <Comedie /> } />
-            <Route path="/couture" element={ <Couture /> } />
-            <Route path="/admin" element={ <Admin /> } />
-        </Routes>
+            <Header />
+            <Navbar />
+            <Routes>
+                <Route path="/A2C2" element={ <Home /> } />
+                <Route path="/about" element={ <About /> } />
+                <Route path="/archi" element={ <Archi /> } />
+                <Route path="/aventure" element={ <Aventure /> } />
+                <Route path="/comedie" element={ <Comedie /> } />
+                <Route path="/couture" element={ <Couture /> } />
+                <Route path="/admin" element={ <Admin /> } />
+                <Route path="/contact" element={ <Contact /> } />
+            </Routes>
         </Router> 
     );
 }

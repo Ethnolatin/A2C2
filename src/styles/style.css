@@ -41,6 +41,10 @@ strong {
   color: #03A5AB;
 }
 
+hr {
+  margin: 2rem 0;
+}
+
 .entete {
   width: 100%;
   height: auto;
@@ -249,6 +253,14 @@ nav {
 .socialNetworkLink:hover {
   cursor: pointer;
   color: #454545;
+}
+
+.linkButton {
+  margin: auto;
+  border: 1px solid #03A5AB;
+  padding: 0.6rem 1.5rem;
+  color: #03A5AB;
+  text-decoration: none;
 }
 
 @keyframes comesIn {
