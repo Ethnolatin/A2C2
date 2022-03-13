@@ -1,5 +1,6 @@
 import Header from "./components/header";
 import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from './pages/index';
 import About from './pages/about';
@@ -26,6 +27,7 @@ function App() {
                 <Route path="/admin" element={ <Admin /> } />
                 <Route path="/contact" element={ <Contact /> } />
             </Routes>
+            <Footer />
         </Router> 
     );
 }

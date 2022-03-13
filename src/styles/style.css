@@ -16,12 +16,24 @@ body button, body input[type=submit], body input[type=reset] {
   outline: inherit;
 }
 
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 main {
   max-width: 1080px;
-  margin: auto;
-  padding: 1rem 2rem;
+  margin: 2rem auto;
+  padding: 0 2rem;
   line-height: 1.5rem;
   align-items: center;
+}
+
+footer {
+  margin-top: auto;
+  padding: 2rem;
+  background-color: #ccc;
 }
 
 h1 {
@@ -31,10 +43,6 @@ h1 {
 
 h2 {
   font-size: 1.1rem;
-}
-
-p {
-  padding-top: 0.5rem;
 }
 
 strong {
@@ -93,7 +101,7 @@ hr {
   justify-content: space-evenly;
   min-width: 60%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 520px) {
   .logosContainer {
     flex-direction: column;
     flex-grow: 1;
@@ -255,12 +263,47 @@ nav {
   color: #454545;
 }
 
+.spacer {
+  flex: 1;
+}
+
 .linkButton {
-  margin: auto;
+  margin: 0.5rem auto;
   border: 1px solid #03A5AB;
   padding: 0.6rem 1.5rem;
   color: #03A5AB;
+  font-weight: bold;
   text-decoration: none;
+}
+.linkButton__footer {
+  width: 8rem;
+  text-align: center;
+}
+.linkButton:hover {
+  cursor: pointer;
+  color: #454545;
+  border-color: #454545;
+}
+
+.footerLinksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 3;
+  padding: 0 1rem;
+  min-width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .footerLinksContainer {
+    flex-grow: 1;
+    max-width: 100%;
+  }
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 @keyframes comesIn {

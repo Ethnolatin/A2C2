@@ -1,7 +1,11 @@
+$primary-color: #03A5AB;
+$secondary-color: #454545;
+$tertiary-color: #ccc;
+
 body {
     margin: 0;
     padding: 0;
-    color: #454545;
+    color: $secondary-color;
 
     font-family: 'Roboto', sans-serif, 'google';
     -webkit-font-smoothing: antialiased;
@@ -18,29 +22,39 @@ body {
     }
 }
 
+#root {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
 main {
     max-width: 1080px;
-    margin: auto;
-    padding: 1rem 2rem;
+    margin: 2rem auto;
+    padding: 0 2rem;
     line-height: 1.5rem;
     align-items: center;
 }
 
+footer {
+    // position: absolute;
+    // bottom: 0;
+    margin-top: auto;
+    padding: 2rem;
+    background-color: $tertiary-color;
+}
+
 h1 {
     font-size: 1.25rem;
-    color: #03A5AB;
+    color: $primary-color;
 }
 
 h2 {
     font-size: 1.1rem;
 }
 
-p {
-    padding-top: 0.5rem;
-}
-
 strong {
-    color: #03A5AB;
+    color: $primary-color;
 }
 
 hr {
@@ -89,11 +103,11 @@ hr {
     flex-grow: 3;
     justify-content: space-evenly;
     min-width: 60%;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 520px) {
         flex-direction: column;
         flex-grow: 1;
         max-width: 100%;
-}
+    }
 }
 
 .logos {
@@ -119,7 +133,7 @@ hr {
 
 nav {
     position: relative;
-    background: #ccc;
+    background: $tertiary-color;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -143,7 +157,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: left;
-        background: #ccc;
+        background: $tertiary-color;
         animation: 0.5s move ease-out;
         animation-fill-mode: both;
     }
@@ -155,7 +169,7 @@ nav {
         border-bottom: 1px solid rgba(33,33,33,.1);
     }
     &:hover {
-        background: #03A5AB;
+        background: $primary-color;
     }
 }
 
@@ -168,10 +182,10 @@ nav {
     height: 100%;
     cursor: pointer;
     &:focus {
-        background: #03A5AB;
+        background: $primary-color;
     }
     &.active {
-        background: #03A5AB;
+        background: $primary-color;
     }
 }
 
@@ -239,20 +253,54 @@ nav {
 .socialNetworkLink {
     width: 3rem;
     height: auto;
-    color: #03A5AB;
+    color: $primary-color;
     &:hover {
         cursor: pointer;
-        color: #454545
+        color: $secondary-color
     }
 }
 
+.spacer {
+    flex: 1;
+  }
+
 .linkButton {
-    margin: auto;
-    border: 1px solid #03A5AB;
+    margin: 0.5rem auto;
+    border: 1px solid $primary-color;
     padding: 0.6rem 1.5rem;
-    color: #03A5AB;
+    color: $primary-color;
+    font-weight: bold;
     text-decoration: none;
 
+    &__footer {
+        width: 8rem;
+        text-align: center;
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: $secondary-color;
+        border-color: $secondary-color;
+    }
+}
+
+.footerLinksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 3;
+    padding: 0 1rem;
+    min-width: 60%;
+    @media screen and (max-width: 768px) {
+        flex-grow: 1;
+        max-width: 100%;
+    }
+}
+
+.footerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 @keyframes comesIn {
