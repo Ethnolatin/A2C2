@@ -2,8 +2,17 @@ import archi from '../images/archi.png';
 import aventure from '../images/aventure.png';
 import couture from '../images/couture.png';
 import comedie from '../images/comedie.png';
+import presentation1_thumbnail from '../images/presentation1_thumbnail.jpg';
+import presentation2_thumbnail from '../images/presentation2_thumbnail.jpg';
+import cv_thumbnail from '../images/cv_thumbnail.jpg';
+import demarche_thumbnail from '../images/demarche_thumbnail.jpg';
+import presentation1 from '../images/presentation1.jpg';
+import presentation2 from '../images/presentation2.jpg';
+import cv from '../images/cv.jpg';
+import demarche from '../images/demarche.jpg';
 import { FaFacebookSquare, FaLinkedin, FaInstagramSquare } from 'react-icons/fa';
 import { NavLink as Link } from "react-router-dom";
+import { SRLWrapper } from "simple-react-lightbox";
 
 
 const Home = () => {
@@ -62,6 +71,32 @@ const Home = () => {
                     </a>
                 </div>
             </div>
+            <hr />
+            <SRLWrapper>
+                <div className="docsContainer">
+                    <div className="doc">
+                        <h3>Brochure de présentation</h3>
+                        <a href={presentation1}>
+                            <img src={presentation1_thumbnail} alt="Brochure de présentation recto" />
+                        </a>
+                        <a href={presentation2}>
+                            <img src={presentation2_thumbnail} alt="Brochure de présentation verso" />
+                        </a>
+                    </div>
+                    <div className="doc">
+                        <h3>CV de l'Atelier A²C²</h3>
+                        <a href={cv}>
+                            <img src={cv_thumbnail} alt="CV de l'Atelier A²C²" />
+                        </a>
+                    </div>
+                    <div className="doc">
+                        <h3>Démarche de l'Atelier A²C²</h3>
+                        <a href={demarche}>
+                            <img src={demarche_thumbnail} alt="Démarche de l'Atelier A²C²" />
+                        </a>
+                    </div>
+                </div>
+            </SRLWrapper>
             <hr />
             <div className="container">
                 <Link

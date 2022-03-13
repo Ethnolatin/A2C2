@@ -45,6 +45,11 @@ h2 {
   font-size: 1.1rem;
 }
 
+h3 {
+  font-size: 1rem;
+  color: #03A5AB;
+}
+
 strong {
   color: #03A5AB;
 }
@@ -92,6 +97,22 @@ hr {
   .container {
     flex-direction: column;
   }
+}
+
+.docsContainer {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .docsContainer {
+    flex-direction: column;
+  }
+}
+
+.doc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logosContainer {
