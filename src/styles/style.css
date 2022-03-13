@@ -18,12 +18,13 @@ body button, body input[type=submit], body input[type=reset] {
 
 #root {
   display: flex;
+  margin: auto;
+  max-width: 1080px;
   min-height: 100vh;
   flex-direction: column;
 }
 
 main {
-  max-width: 1080px;
   margin: 2rem auto;
   padding: 0 2rem;
   line-height: 1.5rem;
