@@ -1,21 +1,28 @@
 {
   "files": {
-    "main.css": "/A2C2/static/css/main.73478247.css",
-    "main.js": "/A2C2/static/js/main.9071a19e.js",
-    "static/js/787.9412e4b6.chunk.js": "/A2C2/static/js/787.9412e4b6.chunk.js",
+    "main.css": "/A2C2/static/css/main.f4a36688.css",
+    "main.js": "/A2C2/static/js/main.66256256.js",
     "static/media/entete.png": "/A2C2/static/media/entete.53a5c2d0ac60abf3c34a.png",
+    "static/media/cv.jpg": "/A2C2/static/media/cv.e6db5360c3a381fa3c89.jpg",
+    "static/media/presentation2.jpg": "/A2C2/static/media/presentation2.13371cc22264beae237d.jpg",
+    "static/media/presentation1.jpg": "/A2C2/static/media/presentation1.986a852af2e429dbb70f.jpg",
+    "static/media/demarche.jpg": "/A2C2/static/media/demarche.9e9499fb0b9357aa8276.jpg",
     "static/media/enteteSm.png": "/A2C2/static/media/enteteSm.39e86ace39fb449ba82c.png",
     "static/media/aventure.png": "/A2C2/static/media/aventure.ab1d8dfcba96d7ed09ec.png",
     "static/media/comedie.png": "/A2C2/static/media/comedie.bda4ca50fc3a2c4592be.png",
     "static/media/archi.png": "/A2C2/static/media/archi.3ddd3d5ebe8f2b839180.png",
     "static/media/couture.png": "/A2C2/static/media/couture.e4c498c3e8b10a5df999.png",
+    "static/media/cv_thumbnail.jpg": "/A2C2/static/media/cv_thumbnail.4592ac96a3f9dbf7f6d5.jpg",
+    "static/media/oa.png": "/A2C2/static/media/oa.0c20483511985e4cd249.png",
+    "static/media/demarche_thumbnail.jpg": "/A2C2/static/media/demarche_thumbnail.0924f6e5b3803af4bcdf.jpg",
+    "static/media/presentation2_thumbnail.jpg": "/A2C2/static/media/presentation2_thumbnail.005e5a4736ba55b9fd7c.jpg",
+    "static/media/presentation1_thumbnail.jpg": "/A2C2/static/media/presentation1_thumbnail.1b1d00431431e726a03a.jpg",
     "index.html": "/A2C2/index.html",
-    "main.73478247.css.map": "/A2C2/static/css/main.73478247.css.map",
-    "main.9071a19e.js.map": "/A2C2/static/js/main.9071a19e.js.map",
-    "787.9412e4b6.chunk.js.map": "/A2C2/static/js/787.9412e4b6.chunk.js.map"
+    "main.f4a36688.css.map": "/A2C2/static/css/main.f4a36688.css.map",
+    "main.66256256.js.map": "/A2C2/static/js/main.66256256.js.map"
   },
   "entrypoints": [
-    "static/css/main.73478247.css",
-    "static/js/main.9071a19e.js"
+    "static/css/main.f4a36688.css",
+    "static/js/main.66256256.js"
   ]
 }
