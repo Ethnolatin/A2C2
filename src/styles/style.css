@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -40,10 +41,29 @@ footer h1 {
   font-size: 1.1rem;
 }
 
-.home h1 {
+h1 {
+  font-size: 1.5rem;
+  color: #03A5AB;
+}
+
+h2 {
   font-size: 1.25rem;
   color: #03A5AB;
 }
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "•";
+  color: #03A5AB;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
 .home h2 {
   font-size: 1.1rem;
 }
@@ -138,10 +158,19 @@ hr {
   align-items: center;
   flex-direction: column;
 }
+.logos-title {
+  text-align: center;
+  padding-right: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .logos-title {
+    margin: auto;
+  }
+}
 
 .logo {
   display: block;
-  margin: 0.5rem 0;
+  margin: 0.5rem auto;
 }
 
 .textContainer {
@@ -152,6 +181,40 @@ hr {
     flex-grow: 1;
     width: 100%;
   }
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .maps {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 520px) {
+  .maps {
+    flex-direction: column;
+  }
+}
+
+.map {
+  margin: 0.5rem 0 0 1rem;
+}
+@media screen and (max-width: 768px) {
+  .map {
+    margin: 0.5rem auto;
+    padding: 0 1rem;
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.legend {
+  margin-top: 0;
+  font-size: 0.8rem;
+  color: #03A5AB;
 }
 
 nav {

@@ -18,7 +18,7 @@ import { SRLWrapper } from "simple-react-lightbox";
 const Home = () => {
     return (
         <main className="home">
-            <h1>La boîte à outils d'A²C² :</h1>
+            <h1 className="h2">La boîte à outils d'A²C² :</h1>
             <div className="container">
                 <div className="logosContainer">
                     <div className="logos">
