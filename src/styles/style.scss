@@ -25,7 +25,7 @@ body {
 #root {
     display: flex;
     margin: auto;
-    max-width: 1080px;
+    max-width: 1400px;
     min-height: 100vh;
     flex-direction: column;
 }
@@ -38,25 +38,27 @@ main {
 }
 
 footer {
-    // position: absolute;
-    // bottom: 0;
     margin-top: auto;
     padding: 2rem;
     background-color: $tertiary-color;
+    & h1 {
+        font-size: 1.1rem;
+    }
+    
 }
 
-h1 {
-    font-size: 1.25rem;
-    color: $primary-color;
-}
-
-h2 {
-    font-size: 1.1rem;
-}
-
-h3 {
-    font-size: 1rem;
-    color: $primary-color;
+.home {
+    & h1 {
+        font-size: 1.25rem;
+        color: $primary-color;
+    }
+    & h2 {
+        font-size: 1.1rem;
+    }
+    & h3 {
+        font-size: 1rem;
+        color: $primary-color;
+    }
 }
 
 strong {
@@ -239,17 +241,17 @@ nav {
     &.arrow {
         .bar:nth-child(1) {
             transform-origin: left center;
-            transform: translateY(0px) rotate(405deg);
+            transform: translateY(-1px) rotate(405deg);
             width: 12px;
             }
         .bar:nth-child(3) {
             transform-origin: left center;
-            transform: translateY(0px) rotate(315deg);
+            transform: translateY(1px) rotate(315deg);
             width: 12px;
         }   
         .bar:nth-child(2) {
             transform-origin: center center;
-            transform: translateY(-0%) rotate(180deg);
+            transform: translateX(1px) rotate(180deg);
         }
     }
 }

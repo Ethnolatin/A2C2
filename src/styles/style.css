@@ -19,7 +19,7 @@ body button, body input[type=submit], body input[type=reset] {
 #root {
   display: flex;
   margin: auto;
-  max-width: 1080px;
+  max-width: 1400px;
   min-height: 100vh;
   flex-direction: column;
 }
@@ -36,17 +36,18 @@ footer {
   padding: 2rem;
   background-color: #ccc;
 }
-
-h1 {
-  font-size: 1.25rem;
-  color: #03A5AB;
-}
-
-h2 {
+footer h1 {
   font-size: 1.1rem;
 }
 
-h3 {
+.home h1 {
+  font-size: 1.25rem;
+  color: #03A5AB;
+}
+.home h2 {
+  font-size: 1.1rem;
+}
+.home h3 {
   font-size: 1rem;
   color: #03A5AB;
 }
@@ -245,17 +246,17 @@ nav {
 }
 .threeBars.arrow .bar:nth-child(1) {
   transform-origin: left center;
-  transform: translateY(0px) rotate(405deg);
+  transform: translateY(-1px) rotate(405deg);
   width: 12px;
 }
 .threeBars.arrow .bar:nth-child(3) {
   transform-origin: left center;
-  transform: translateY(0px) rotate(315deg);
+  transform: translateY(1px) rotate(315deg);
   width: 12px;
 }
 .threeBars.arrow .bar:nth-child(2) {
   transform-origin: center center;
-  transform: translateY(0%) rotate(180deg);
+  transform: translateX(1px) rotate(180deg);
 }
 
 .socialNetworksContainer {

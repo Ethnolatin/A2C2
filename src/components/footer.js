@@ -24,7 +24,7 @@ const Footer = () => {
             </p>
             </div>
             <div className="footerLinksContainer">
-                <h2>Informations complémentaires sur mes parcours de&nbsp;:</h2>
+                <h1>Informations complémentaires sur mes parcours de&nbsp;:</h1>
                 <div className="footerLinks">
                     {footerLinks.map(footerLink => {
                         return (
