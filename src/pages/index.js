@@ -48,7 +48,7 @@ const Home = () => {
                     <p>
                         Bonne découverte.
                     </p>
-                    <p className="signature">
+                    <p className="text-right">
                         Avec détermination & singularité<br/>
                         <strong>Marie Bourquin / Slasheuse de l'Atelier A²C²</strong>
                     </p>

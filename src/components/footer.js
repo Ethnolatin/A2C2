@@ -25,12 +25,12 @@ const Footer = () => {
             </div>
             <div className="footerLinksContainer">
                 <h1>Informations complémentaires sur mes parcours de&nbsp;:</h1>
-                <div className="footerLinks">
+                <div className="links">
                     {footerLinks.map(footerLink => {
                         return (
                             <Link
                                 key={footerLinks.indexOf(footerLink)} 
-                                className="linkButton linkButton__footer"
+                                className="linkButton linkButton-footer"
                                 to={footerLink.page} 
                             >
                                 {footerLink.title}

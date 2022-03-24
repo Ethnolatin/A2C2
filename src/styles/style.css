@@ -80,6 +80,13 @@ hr {
   margin: 2rem 0;
 }
 
+.extLink {
+  color: #454545;
+}
+.extLink:hover {
+  color: #03A5AB;
+}
+
 .entete {
   width: 100%;
   height: auto;
@@ -100,8 +107,11 @@ hr {
   }
 }
 
-.signature {
+.text-right {
   text-align: right;
+}
+.text-center {
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
@@ -114,6 +124,7 @@ hr {
 }
 .container {
   display: flex;
+  justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -181,6 +192,20 @@ hr {
     flex-grow: 1;
     width: 100%;
   }
+}
+
+.lettersContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.letter {
+  max-width: 100px;
+  margin: 2px;
+  border: 2px solid #454545;
+}
+.letter:hover {
+  border-color: #03A5AB;
 }
 
 .maps {
@@ -361,7 +386,7 @@ nav {
   font-weight: bold;
   text-decoration: none;
 }
-.linkButton__footer {
+.linkButton-footer {
   width: 8rem;
   text-align: center;
 }
@@ -386,10 +411,19 @@ nav {
   }
 }
 
-.footerLinks {
+.links {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   align-items: flex-start;
+  justify-content: space-between;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 @keyframes comesIn {

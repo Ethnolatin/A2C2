@@ -87,6 +87,13 @@ hr {
     margin: 2rem 0;
 }
 
+.extLink {
+    color: $secondary-color;
+    &:hover {
+        color: $primary-color;
+    }
+}
+
 .entete {
     width: 100%;
     height: auto;
@@ -103,8 +110,13 @@ hr {
     }
 }
 
-.signature {
-    text-align: right;
+.text {
+    &-right {
+        text-align: right;
+    }
+    &-center {
+        text-align: center;
+    }
 }
 
 @keyframes App-logo-spin {
@@ -118,6 +130,7 @@ hr {
 
 .container {
     display: flex;
+    justify-content: space-around;
     @media screen and (max-width: 768px) {
         flex-direction: column;
     }
@@ -171,11 +184,24 @@ hr {
 }
 
 .textContainer {
-    // flex-grow: 2;
     width: 40%;
     @media screen and (max-width: 768px) {
         flex-grow: 1;
         width: 100%;
+    }
+}
+
+.lettersContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.letter {
+    max-width: 100px;
+    margin: 2px;
+    border: 2px solid $secondary-color;
+    &:hover {
+        border-color: $primary-color;
     }
 }
 
@@ -348,7 +374,7 @@ nav {
     font-weight: bold;
     text-decoration: none;
 
-    &__footer {
+    &-footer {
         width: 8rem;
         text-align: center;
     }
@@ -373,10 +399,19 @@ nav {
     }
 }
 
-.footerLinks {
+.links {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
     align-items: flex-start;
+    justify-content: space-between;
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 @keyframes comesIn {
