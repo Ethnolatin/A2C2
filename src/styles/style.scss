@@ -69,6 +69,13 @@ ul {
     margin-left: -1em;
   }
 
+  small {
+      display: flex;
+      line-height: 1rem;
+      justify-content: center;
+      text-align: center;
+  }
+
 .home {
     & h2 {
         font-size: 1.1rem;
