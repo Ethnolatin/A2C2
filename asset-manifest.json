@@ -1,19 +1,40 @@
 {
   "files": {
-    "main.css": "/A2C2/static/css/main.bfa6bce9.css",
-    "main.js": "/A2C2/static/js/main.cba24744.js",
+    "main.css": "/A2C2/static/css/main.7632befb.css",
+    "main.js": "/A2C2/static/js/main.76aa3de0.js",
     "static/media/entete.png": "/A2C2/static/media/entete.53a5c2d0ac60abf3c34a.png",
     "static/media/cv.jpg": "/A2C2/static/media/cv.e6db5360c3a381fa3c89.jpg",
     "static/media/presentation2.jpg": "/A2C2/static/media/presentation2.13371cc22264beae237d.jpg",
+    "static/media/lettre_archi5.jpg": "/A2C2/static/media/lettre_archi5.aecbfbb789b86188dd5b.jpg",
     "static/media/presentation1.jpg": "/A2C2/static/media/presentation1.986a852af2e429dbb70f.jpg",
+    "static/media/lettre_archi3.jpg": "/A2C2/static/media/lettre_archi3.99a8bb8d738541a7a672.jpg",
+    "static/media/lettre_archi9.jpg": "/A2C2/static/media/lettre_archi9.e7451dc62d7ed571b505.jpg",
+    "static/media/lettre_archi10.jpg": "/A2C2/static/media/lettre_archi10.4cea40c190f1c84a05a3.jpg",
+    "static/media/lettre_archi6.jpg": "/A2C2/static/media/lettre_archi6.2532b6d51ad3704d6f86.jpg",
     "static/media/demarche.jpg": "/A2C2/static/media/demarche.9e9499fb0b9357aa8276.jpg",
+    "static/media/lettre_archi2.jpg": "/A2C2/static/media/lettre_archi2.43f5e6a87655158f12eb.jpg",
+    "static/media/lettre_archi1.jpg": "/A2C2/static/media/lettre_archi1.55f1165188c7fa19a032.jpg",
+    "static/media/lettre_archi7.jpg": "/A2C2/static/media/lettre_archi7.b1dff8e6bee1668d21f6.jpg",
     "static/media/enteteSm.png": "/A2C2/static/media/enteteSm.39e86ace39fb449ba82c.png",
+    "static/media/lettre_archi4.jpg": "/A2C2/static/media/lettre_archi4.183c6b97ee2aa5fe220d.jpg",
     "static/media/carte1.jpg": "/A2C2/static/media/carte1.39341c4a76c89d95e9eb.jpg",
+    "static/media/lettre_archi8.jpg": "/A2C2/static/media/lettre_archi8.0bba9fe63f7fc877908c.jpg",
     "static/media/carte2.jpg": "/A2C2/static/media/carte2.c444509f5f8bba533032.jpg",
+    "static/media/lettre_archi10_thumbnail.jpg": "/A2C2/static/media/lettre_archi10_thumbnail.9cf863a2db17d0431cc0.jpg",
+    "static/media/lettre_archi7_thumbnail.jpg": "/A2C2/static/media/lettre_archi7_thumbnail.77440ec4bd878e10d059.jpg",
+    "static/media/lettre_archi6_thumbnail.jpg": "/A2C2/static/media/lettre_archi6_thumbnail.b4654092ba532e232904.jpg",
+    "static/media/lettre_archi9_thumbnail.jpg": "/A2C2/static/media/lettre_archi9_thumbnail.48b9f3110a30dfe2fe44.jpg",
+    "static/media/lettre_archi5_thumbnail.jpg": "/A2C2/static/media/lettre_archi5_thumbnail.050fc634676b01f3427f.jpg",
+    "static/media/lettre_archi3_thumbnail.jpg": "/A2C2/static/media/lettre_archi3_thumbnail.b35559dc562c82754dd9.jpg",
     "static/media/aventure.png": "/A2C2/static/media/aventure.ab1d8dfcba96d7ed09ec.png",
+    "static/media/lettre_archi2_thumbnail.jpg": "/A2C2/static/media/lettre_archi2_thumbnail.a55abfc897a260e6c79f.jpg",
+    "static/media/archi_diplomee.jpg": "/A2C2/static/media/archi_diplomee.632acc8ade5a10e3b9bf.jpg",
+    "static/media/lettre_archi8_thumbnail.jpg": "/A2C2/static/media/lettre_archi8_thumbnail.e64d9a089f32a2065152.jpg",
+    "static/media/lettre_archi1_thumbnail.jpg": "/A2C2/static/media/lettre_archi1_thumbnail.92a5088c4e14e76b67f8.jpg",
     "static/media/comedie.png": "/A2C2/static/media/comedie.bda4ca50fc3a2c4592be.png",
     "static/media/archi.png": "/A2C2/static/media/archi.3ddd3d5ebe8f2b839180.png",
     "static/media/couture.png": "/A2C2/static/media/couture.e4c498c3e8b10a5df999.png",
+    "static/media/lettre_archi4_thumbnail.jpg": "/A2C2/static/media/lettre_archi4_thumbnail.bd3cc1550d277774954f.jpg",
     "static/media/cv_thumbnail.jpg": "/A2C2/static/media/cv_thumbnail.4592ac96a3f9dbf7f6d5.jpg",
     "static/media/archi2.png": "/A2C2/static/media/archi2.aa8ec1e26484a8d868b4.png",
     "static/media/oa.png": "/A2C2/static/media/oa.0c20483511985e4cd249.png",
@@ -21,11 +42,11 @@
     "static/media/presentation2_thumbnail.jpg": "/A2C2/static/media/presentation2_thumbnail.005e5a4736ba55b9fd7c.jpg",
     "static/media/presentation1_thumbnail.jpg": "/A2C2/static/media/presentation1_thumbnail.1b1d00431431e726a03a.jpg",
     "index.html": "/A2C2/index.html",
-    "main.bfa6bce9.css.map": "/A2C2/static/css/main.bfa6bce9.css.map",
-    "main.cba24744.js.map": "/A2C2/static/js/main.cba24744.js.map"
+    "main.7632befb.css.map": "/A2C2/static/css/main.7632befb.css.map",
+    "main.76aa3de0.js.map": "/A2C2/static/js/main.76aa3de0.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfa6bce9.css",
-    "static/js/main.cba24744.js"
+    "static/css/main.7632befb.css",
+    "static/js/main.76aa3de0.js"
   ]
 }
