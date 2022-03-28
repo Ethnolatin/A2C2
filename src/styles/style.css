@@ -64,7 +64,7 @@ ul li::before {
   margin-left: -1em;
 }
 
-small {
+.centeredText {
   display: flex;
   line-height: 1rem;
   justify-content: center;
@@ -139,17 +139,7 @@ hr {
   }
 }
 
-.docsContainer {
-  display: flex;
-  justify-content: space-around;
-}
-@media screen and (max-width: 768px) {
-  .docsContainer {
-    flex-direction: column;
-  }
-}
-
-.doc {
+.centeredColumn {
   display: flex;
   flex-direction: column;
   align-items: center;

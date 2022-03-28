@@ -116,7 +116,7 @@ const Archi = () => {
                     <p>Atelier participatif sur vos espaces de vie.<br/>Pour adultes.</p>
                 </div>
             </div>
-            <small><em>Pour les particuliers, le règlement des ateliers se fait le jour de l'atelier à Marie Bourquin directement et uniquement par chèque ou espèces.<br/>Pour les structures ou organisations, le règlement des ateliers peut se faire par virement, à la réception de la facture.</em></small>
+            <small className="centeredText"><em>Pour les particuliers, le règlement des ateliers se fait le jour de l'atelier à Marie Bourquin directement et uniquement par chèque ou espèces.<br/>Pour les structures ou organisations, le règlement des ateliers peut se faire par virement, à la réception de la facture.</em></small>
             <hr />
             <h2>Je suis archi-passée par ici :</h2>
             <div className="container">
