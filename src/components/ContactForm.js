@@ -2,10 +2,11 @@ import React, { useState } from "react"
 
 const ContactForm = () => {
 	const [status, setStatus] = useState("Envoyer")
+	const [formSent, setFormSent] = useState(false)
 
 	const handleSubmit = async (e) => {
 		e.preventDefault()
-		setStatus("Envoi en cours...")
+		setStatus("C'est partiiii !")
 		const { name, email, workshop, message } = e.target.elements
 		let data = {
 			name: name.value,
@@ -13,20 +14,22 @@ const ContactForm = () => {
 			workshop: workshop.value,
 			message: message.value,
 		}
-		let response = await fetch("http://localhost:5000/contact/", {
+		await fetch("http://localhost:5000/contact/", {
 			method: "POST",
 			headers: {
 				"Content-type": "application/json",
 			},
 			body: JSON.stringify(data),
 		})
-		setStatus("Envoyer")
-		let result = await response.json()
-		alert(result.status)
+		// setStatus("Envoyer")
+		// let result = await response.json()
+		// alert(result.status)
+		setFormSent(true)
 	}
 	return (
-		<form onSubmit={handleSubmit}>
-			{/* <fieldset> */}
+		formSent ?
+			<p><strong>Le message a bien été transmis. Merci !</strong></p>
+			: <form onSubmit={handleSubmit}>
 				<label>
 					<p className="labelText">Nom</p> 
 					<input type="text" name="name" required />
@@ -49,9 +52,9 @@ const ContactForm = () => {
 					<p className="labelText">Message</p> 
 					<textarea name="message" required />
 				</label>
-			{/* </fieldset> */}
-			<button type="submit">{status}</button>
-		</form>
+				<button type="submit" className="sendButton">{status}</button>
+				<p className="labelText"><em><strong>Note :</strong> tous les champs sont requis.</em></p> 
+			</form>
 	)
 }
 
