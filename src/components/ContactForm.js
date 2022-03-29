@@ -26,27 +26,30 @@ const ContactForm = () => {
 	}
 	return (
 		<form onSubmit={handleSubmit}>
-			<label>
-				Nom 
-				<input type="text" name="name" required />
-			</label>
-			<label>
-				e-mail
-				<input type="email" name="email" required />
-			</label>
-			<label>
-				Atelier
-				<select name="workshop" required>
-					<option value="archi">Architecture</option>
-					<option value="aventure">Aventure</option>
-					<option value="couture">Couture</option>
-					<option value="comedie">Comédie</option>
-				</select>
-			</label>
-			<label>
-				Message
-				<textarea name="message" required />
-			</label>
+			{/* <fieldset> */}
+				<label>
+					<p className="labelText">Nom</p> 
+					<input type="text" name="name" required />
+				</label>
+				<label>
+					<p className="labelText">e-mail</p> 
+					<input type="email" name="email" required />
+				</label>
+				<label>
+					<p className="labelText">Atelier</p> 
+					<select name="workshop" required>
+						<option value="">-- choisissez --</option>
+						<option value="archi">Architecture</option>
+						<option value="aventure">Aventure</option>
+						<option value="couture">Couture</option>
+						<option value="comedie">Comédie</option>
+					</select>
+				</label>
+				<label>
+					<p className="labelText">Message</p> 
+					<textarea name="message" required />
+				</label>
+			{/* </fieldset> */}
 			<button type="submit">{status}</button>
 		</form>
 	)

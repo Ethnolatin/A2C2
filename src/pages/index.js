@@ -102,7 +102,7 @@ const Home = () => {
                 <Link
                     className="linkButton"
                     to="/contact"
-                    target="_blank"
+                    // target="_blank"
                 >
                     Pour toute demande, contactez-moi
                 </Link>

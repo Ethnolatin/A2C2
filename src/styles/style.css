@@ -74,8 +74,10 @@ label {
   display: flex;
   align-items: flex-start;
 }
-label #text {
-  min-width: 40%;
+
+.labelText {
+  margin-top: 0;
+  min-width: 5rem;
 }
 
 input, textarea {
