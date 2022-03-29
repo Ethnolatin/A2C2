@@ -33,23 +33,24 @@ contactEmail.verify((error) => {
 })
 
 router.post("/contact", (req, res) => {
-    console.log("req.body: ", req.body)
     const name = req.body.name
     const email = req.body.email
+    const workshop = req.body.workshop
     const message = req.body.message 
     const mail = {
         from: name,
         to: "duchesne.fred@gmail.com",
-        subject: "Contact Form Submission",
+        subject: "Contact depuis le site A²C²",
         html:   `<p>Nom : ${name}</p>
                 <p>E-mail : ${email}</p>
+                <p>Atelier : ${workshop}</p>
                 <p>Message : ${message}</p>`,
     }
     contactEmail.sendMail(mail, (error) => {
       if (error) {
         res.json({ status: "ERROR" })
       } else {
-        res.json({ status: "Message Sent" })
+        res.json({ status: "Message envoyé" })
       }
     })
   })

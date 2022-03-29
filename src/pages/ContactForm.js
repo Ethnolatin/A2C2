@@ -1,14 +1,16 @@
 import React, { useState } from "react"
 
 const ContactForm = () => {
-	const [status, setStatus] = useState("Submit")
+	const [status, setStatus] = useState("Envoyer")
+
 	const handleSubmit = async (e) => {
 		e.preventDefault()
-		setStatus("Sending...")
-		const { name, email, message } = e.target.elements
+		setStatus("Envoi en cours...")
+		const { name, email, workshop, message } = e.target.elements
 		let data = {
 			name: name.value,
 			email: email.value,
+			workshop: workshop.value,
 			message: message.value,
 		}
 		let response = await fetch("http://localhost:5000/contact/", {
@@ -18,25 +20,34 @@ const ContactForm = () => {
 			},
 			body: JSON.stringify(data),
 		})
-		setStatus("Submit")
+		setStatus("Envoyer")
 		let result = await response.json()
 		alert(result.status)
 	}
 	return (
 		<form onSubmit={handleSubmit}>
-		<div>
-			<label htmlFor="name">Nom :</label>
-			<input type="text" id="name" required />
-		</div>
-		<div>
-			<label htmlFor="email">E-mail :</label>
-			<input type="email" id="email" required />
-		</div>
-		<div>
-			<label htmlFor="message">Message :</label>
-			<textarea id="message" required />
-		</div>
-		<button type="submit">{status}</button>
+			<label>
+				Nom 
+				<input type="text" name="name" required />
+			</label>
+			<label>
+				e-mail
+				<input type="email" name="email" required />
+			</label>
+			<label>
+				Atelier
+				<select name="workshop" required>
+					<option value="archi">Architecture</option>
+					<option value="aventure">Aventure</option>
+					<option value="couture">Couture</option>
+					<option value="comedie">Comédie</option>
+				</select>
+			</label>
+			<label>
+				Message
+				<textarea name="message" required />
+			</label>
+			<button type="submit">{status}</button>
 		</form>
 	)
 }
