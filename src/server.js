@@ -41,10 +41,13 @@ router.post("/contact", (req, res) => {
         from: name,
         to: "duchesne.fred@gmail.com",
         subject: "Contact depuis le site A²C²",
-        html:   `<p>Nom : ${name}</p>
-                <p>E-mail : ${email}</p>
-                <p>Atelier : ${workshop}</p>
-                <p>Message : ${message}</p>`,
+        html: `
+            <p>Bonjour,<br />Vous avez reçu un message depuis le formulaire de contact de votre site A²C² :</p>
+            <p>Nom : ${name}</p>
+            <p>E-mail : ${email}</p>
+            <p>Atelier : ${workshop}</p>
+            <p>Message : ${message}</p>
+        `,
     }
     contactEmail.sendMail(mail, (error) => {
       if (error) {

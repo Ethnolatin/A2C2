@@ -18,7 +18,8 @@ import { SRLWrapper } from 'simple-react-lightbox';
 const Home = () => {
     return (
         <main className="home">
-            <h1 className="h2">La boîte à outils d'A²C² :</h1>
+            <h1 className="h2">La boîte à outils d'A²C²</h1>
+            <hr />
             <div className="container">
                 <div className="logosContainer">
                     <div className="logos">
@@ -102,9 +103,8 @@ const Home = () => {
                 <Link
                     className="linkButton"
                     to="/contact"
-                    // target="_blank"
                 >
-                    Pour toute demande, contactez-moi
+                    Pour toute demande, contactez&#8209;moi
                 </Link>
             </div>
         </main>

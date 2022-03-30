@@ -437,10 +437,6 @@ nav {
   color: #454545;
 }
 
-.spacer {
-  flex: 1;
-}
-
 .linkButton {
   margin: 0.5rem auto;
   border: 1px solid #03A5AB;
@@ -448,10 +444,10 @@ nav {
   color: #03A5AB;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
 }
 .linkButton-footer {
   width: 8rem;
-  text-align: center;
 }
 .linkButton:hover {
   cursor: pointer;

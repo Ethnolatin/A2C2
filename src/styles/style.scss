@@ -416,10 +416,6 @@ nav {
     }
 }
 
-.spacer {
-    flex: 1;
-  }
-
 .linkButton {
     margin: 0.5rem auto;
     border: 1px solid $primary-color;
@@ -427,10 +423,10 @@ nav {
     color: $primary-color;
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
 
     &-footer {
         width: 8rem;
-        text-align: center;
     }
 
     &:hover {

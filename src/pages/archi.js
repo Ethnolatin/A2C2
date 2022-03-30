@@ -124,7 +124,10 @@ const Archi = () => {
                     <div className="lettersContainer">
                         {letters.map(letter => {
                             return (
-                                <a href={letter.name}>
+                                <a
+                                    href={letter.name}
+                                    key={letters.indexOf(letter)} 
+                                >
                                     <img src={letter.thumbnail} alt="Lettre de recommendation" className="letter" />
                                 </a>
                             )
@@ -132,7 +135,7 @@ const Archi = () => {
                     </div>
                 </SRLWrapper>
             </div>
-            <hr/>
+            <hr />
             <h2>Dans l'épisode précédent, je pratiquais l'Architecture de manière conventionnelle</h2>
             <div className="container">
                 <div className="logos-title">
