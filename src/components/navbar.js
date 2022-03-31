@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { NavLink as Link } from "react-router-dom";
+import { menuItems } from "./menuItems";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
     const [navListDisplay, setNavListDisplay] = useState(false)
@@ -7,15 +9,6 @@ const Navbar = () => {
         setNavListDisplay(!navListDisplay);
     }
 
-const navLinks = [
-    { page: "/A2C2", title: "Atelier A²C²"},
-    { page: "/archi", title: "Architecture"},
-    { page: "/aventure", title: "Aventure"},
-    { page: "/couture", title: "Couture"},
-    { page: "/comedie", title: "Comédie"},
-    { page: "/about", title: "A propos"},
-]
-    
   	return (<>
         <nav>
             <button
@@ -30,21 +23,28 @@ const navLinks = [
                 </div>
             </button>
 
-            <div className= {`navMenu ${navListDisplay ? "comesIn" : "comesOut"}`}>
-            {navLinks.map(navLink => {
+            <ul className= {`navMenu ${navListDisplay ? "comesIn" : "comesOut"}`}>
+            {menuItems.map((menu, index) => {
                 return (
-                    <div key={navLinks.indexOf(navLink)} className="navButton">
-                        <Link
-                            className="navLink"
-                            to={navLink.page} 
-                            onClick={() => toggleNavList()}
-                        >
-                            {navLink.title}
-                        </Link>
-                    </div>
+                    <li className="menuItems">
+                        {menu.submenu ? (<>
+                            <button type="button" aria-haspopup="menu">
+                                {menu.title}{" "}
+                            </button>
+                            <Dropdown submenus={menu.submenu} />
+                        </>) : (
+                            <Link
+                                className="menu"
+                                to={menu.page} 
+                                onClick={() => toggleNavList()}
+                            >
+                                {menu.title}
+                            </Link>
+                        )}
+                    </li>
                 )
             })}
-            </div> 
+            </ul> 
         </nav> 
     </>);
 };

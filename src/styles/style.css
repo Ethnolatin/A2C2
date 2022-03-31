@@ -313,7 +313,8 @@ hr {
 }
 
 nav {
-  position: relative;
+  position: sticky;
+  top: 0;
   background: #ccc;
   height: 50px;
   display: flex;
@@ -331,12 +332,14 @@ nav {
 .navMenu {
   display: flex;
   align-items: center;
+  margin: 0;
 }
 @media screen and (max-width: 768px) {
   .navMenu {
     position: absolute;
     top: 50px;
     left: 1rem;
+    padding-left: 0;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -347,16 +350,19 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  .navButton {
+  .menuItem {
     width: 100%;
     border-bottom: 1px solid rgba(33, 33, 33, 0.1);
   }
 }
-.navButton:hover {
+.menuItem::before {
+  display: none;
+}
+.menuItem:hover {
   background: #03A5AB;
 }
 
-.navLink {
+.menu {
   color: black;
   display: flex;
   align-items: center;
@@ -365,10 +371,10 @@ nav {
   height: 100%;
   cursor: pointer;
 }
-.navLink:focus {
+.menu:focus {
   background: #03A5AB;
 }
-.navLink.active {
+.menu.active {
   background: #03A5AB;
 }
 

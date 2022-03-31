@@ -297,7 +297,8 @@ hr {
 }
 
 nav {
-    position: relative;
+    position: sticky;
+    top: 0;
     background: $tertiary-color;
     height: 50px;
     display: flex;
@@ -310,15 +311,15 @@ nav {
     }
 }
 
-
-
 .navMenu {
     display: flex;
     align-items: center;
+    margin: 0;
     @media screen and (max-width: 768px) {
         position: absolute;
         top: 50px;
         left: 1rem;
+        padding-left: 0;
         display: flex;
         flex-direction: column;
         align-items: left;
@@ -328,17 +329,20 @@ nav {
     }
 }
 
-.navButton {
+.menuItem {
     @media screen and (max-width: 768px) {
         width: 100%;
         border-bottom: 1px solid rgba(33,33,33,.1);
+    }
+    &::before {
+        display: none;
     }
     &:hover {
         background: $primary-color;
     }
 }
 
-.navLink {
+.menu {
     color: black;
     display: flex;
     align-items: center;
