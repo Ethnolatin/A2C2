@@ -78,22 +78,22 @@ const Home = () => {
                     <div className="centeredColumn">
                         <h3>Brochure de présentation</h3>
                         <a href={presentation1}>
-                            <img src={presentation1_thumbnail} alt="Brochure de présentation recto" />
+                            <img src={presentation1_thumbnail} alt="Brochure de présentation recto" className="doc" />
                         </a>
                         <a href={presentation2}>
-                            <img src={presentation2_thumbnail} alt="Brochure de présentation verso" />
+                            <img src={presentation2_thumbnail} alt="Brochure de présentation verso" className="doc" />
                         </a>
                     </div>
                     <div className="centeredColumn">
                         <h3>CV de l'Atelier A²C²</h3>
                         <a href={cv}>
-                            <img src={cv_thumbnail} alt="CV de l'Atelier A²C²" />
+                            <img src={cv_thumbnail} alt="CV de l'Atelier A²C²" className="doc" />
                         </a>
                     </div>
                     <div className="centeredColumn">
                         <h3>Démarche de l'Atelier A²C²</h3>
                         <a href={demarche}>
-                            <img src={demarche_thumbnail} alt="Démarche de l'Atelier A²C²" />
+                            <img src={demarche_thumbnail} alt="Démarche de l'Atelier A²C²" className="doc" />
                         </a>
                     </div>
                 </div>

@@ -271,6 +271,13 @@ hr {
   border-color: #03A5AB;
 }
 
+.doc {
+  border: 2px solid transparent;
+}
+.doc:hover {
+  border-color: #03A5AB;
+}
+
 .maps {
   display: flex;
   flex-direction: column;

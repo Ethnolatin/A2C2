@@ -42,6 +42,7 @@ const ContactForm = () => {
 					<p className="labelText">Atelier</p> 
 					<select name="workshop" required>
 						<option value="">-- choisissez --</option>
+						<option value="A²C²">A²C²</option>
 						<option value="Architecture">Architecture</option>
 						<option value="Aventure">Aventure</option>
 						<option value="Couture">Couture</option>
