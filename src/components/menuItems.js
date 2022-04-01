@@ -13,7 +13,7 @@ export const menuItems = [
             },
             {
                 page: "/archi/adultes",
-                title: "adultes",
+                title: "Adultes",
             }
         ]
     },
@@ -23,11 +23,27 @@ export const menuItems = [
     },
     {
         page: "/couture",
-        title: "Couture"
+        title: "Couture",
+        submenu: [
+            {
+                page: "/couture/atelier-diy",
+                title: "Atelier DIY",
+            },
+            {
+                page: "/couture/sur-mesure",
+                title: "Sur-mesure",
+            }
+        ]
     },
     {
         page: "/comedie",
-        title: "Comédie"
+        title: "Comédie",
+        submenu: [
+            {
+                page: "/comedie/la-vie-ce-chantier",
+                title: '"La vie : ce chantier !"',
+            },
+        ]
     },
     {
         page: "/about",

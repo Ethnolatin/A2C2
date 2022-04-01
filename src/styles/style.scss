@@ -303,7 +303,6 @@ nav {
     height: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 0;
     z-index: 12;
     @media screen and (max-width: 768px) {
@@ -313,7 +312,7 @@ nav {
 
 .navMenu {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin: 0;
     @media screen and (max-width: 768px) {
         position: absolute;
@@ -330,15 +329,16 @@ nav {
 }
 
 .menuItem {
-    @media screen and (max-width: 768px) {
-        width: 100%;
-        border-bottom: 1px solid rgba(33,33,33,.1);
-    }
+    width: 7.5rem;
     &::before {
         display: none;
     }
     &:hover {
         background: $primary-color;
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        border-bottom: 1px solid rgba(33,33,33,.1);
     }
 }
 
@@ -346,8 +346,9 @@ nav {
     color: black;
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
-    padding: 14.5px 15px;
+    padding: 15px 15px;
     height: 100%;
     cursor: pointer;
     &:focus {
@@ -356,7 +357,17 @@ nav {
     &.active {
         background: $primary-color;
     }
+    @media screen and (max-width: 768px) {
+        justify-content: flex-start;
+    }
 }
+
+.dropdown {
+    font-size: 0.9rem;
+    z-index: 9999;
+    padding: 0;
+    background-color: #eee;
+  }
 
 .hamburger {
     display: none;
@@ -364,7 +375,7 @@ nav {
         display: block;
         height: 25px;
         width: 30px;
-        margin-left: 1rem;
+        margin: auto 1rem;
     }
 }
 

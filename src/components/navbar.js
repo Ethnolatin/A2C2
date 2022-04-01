@@ -1,13 +1,30 @@
 import React, { useState } from "react";
 import { NavLink as Link } from "react-router-dom";
 import { menuItems } from "./menuItems";
-import Dropdown from "./Dropdown";
 
 const Navbar = () => {
     const [navListDisplay, setNavListDisplay] = useState(false)
+    const [dropdown, setDropdown] = useState(false)
+    const [activeId, setActiveId] = useState()
     const toggleNavList = () => {
+        setDropdown(false)
         setNavListDisplay(!navListDisplay);
     }
+
+    const handleClick = (event, submenu, id) => {
+        setActiveId(id)
+        if (submenu) {
+            if (dropdown) {
+                toggleNavList()
+            } else {
+                event.preventDefault()
+                setDropdown(true)
+            }
+        } else {
+            toggleNavList()
+        }
+    }
+
 
   	return (<>
         <nav>
@@ -24,26 +41,35 @@ const Navbar = () => {
             </button>
 
             <ul className= {`navMenu ${navListDisplay ? "comesIn" : "comesOut"}`}>
-            {menuItems.map((menu, index) => {
-                return (
-                    <li className="menuItems">
-                        {menu.submenu ? (<>
-                            <button type="button" aria-haspopup="menu">
-                                {menu.title}{" "}
-                            </button>
-                            <Dropdown submenus={menu.submenu} />
-                        </>) : (
+                {menuItems.map((menu, index) => {
+                    return (
+                        <li className="menuItem" key={index}>
                             <Link
                                 className="menu"
                                 to={menu.page} 
-                                onClick={() => toggleNavList()}
+                                onClick={(event) => handleClick(event, menu.submenu || false, index)}
                             >
                                 {menu.title}
                             </Link>
-                        )}
-                    </li>
-                )
-            })}
+                            {dropdown && menu.submenu && index===activeId &&
+                            <ul className="dropdown">
+                                {menu.submenu.map((submenuItem, index) => {
+                                    return (
+                                        <li className="menuItem" key={index}>
+                                            <Link
+                                                className="menu"
+                                                to={submenuItem.page} 
+                                                onClick={() => toggleNavList()}
+                                            >
+                                                {submenuItem.title}
+                                            </Link>
+                                        </li>
+                                    )
+                                })}
+                            </ul>}
+                        </li>
+                    )
+                })}
             </ul> 
         </nav> 
     </>);
