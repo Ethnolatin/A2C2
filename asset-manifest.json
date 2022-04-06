@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/A2C2/static/css/main.bd7c5796.css",
-    "main.js": "/A2C2/static/js/main.0c771028.js",
+    "main.css": "/A2C2/static/css/main.e10913ea.css",
+    "main.js": "/A2C2/static/js/main.b99afdd6.js",
     "static/media/entete.png": "/A2C2/static/media/entete.53a5c2d0ac60abf3c34a.png",
     "static/media/cv.jpg": "/A2C2/static/media/cv.e6db5360c3a381fa3c89.jpg",
     "static/media/presentation2.jpg": "/A2C2/static/media/presentation2.13371cc22264beae237d.jpg",
@@ -42,11 +42,11 @@
     "static/media/presentation2_thumbnail.jpg": "/A2C2/static/media/presentation2_thumbnail.005e5a4736ba55b9fd7c.jpg",
     "static/media/presentation1_thumbnail.jpg": "/A2C2/static/media/presentation1_thumbnail.1b1d00431431e726a03a.jpg",
     "index.html": "/A2C2/index.html",
-    "main.bd7c5796.css.map": "/A2C2/static/css/main.bd7c5796.css.map",
-    "main.0c771028.js.map": "/A2C2/static/js/main.0c771028.js.map"
+    "main.e10913ea.css.map": "/A2C2/static/css/main.e10913ea.css.map",
+    "main.b99afdd6.js.map": "/A2C2/static/js/main.b99afdd6.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd7c5796.css",
-    "static/js/main.0c771028.js"
+    "static/css/main.e10913ea.css",
+    "static/js/main.b99afdd6.js"
   ]
 }
