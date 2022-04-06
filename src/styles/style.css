@@ -349,7 +349,7 @@ nav {
 }
 
 .menuItem {
-  width: 7.5rem;
+  width: 7rem;
 }
 .menuItem::before {
   display: none;
@@ -359,7 +359,6 @@ nav {
 }
 @media screen and (max-width: 768px) {
   .menuItem {
-    width: 100%;
     border-bottom: 1px solid rgba(33, 33, 33, 0.1);
   }
 }
@@ -370,7 +369,7 @@ nav {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  padding: 15px 15px;
+  padding: 15px 5px;
   height: 100%;
   cursor: pointer;
 }
