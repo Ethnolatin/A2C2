@@ -40,6 +40,7 @@ const Navbar = () => {
                 {menuItems.map((menu, index) => {
                     return (
                         <MenuItemDisplay
+                            key={index}
                             index={index}
                             dropdown={dropdown}
                             item={menu}
