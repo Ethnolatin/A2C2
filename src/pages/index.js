@@ -1,18 +1,18 @@
-import archi from '../images/archi.png';
-import aventure from '../images/aventure.png';
-import couture from '../images/couture.png';
-import comedie from '../images/comedie.png';
-import presentation1_thumbnail from '../images/presentation1_thumbnail.jpg';
-import presentation2_thumbnail from '../images/presentation2_thumbnail.jpg';
-import cv_thumbnail from '../images/cv_thumbnail.jpg';
-import demarche_thumbnail from '../images/demarche_thumbnail.jpg';
-import presentation1 from '../images/presentation1.jpg';
-import presentation2 from '../images/presentation2.jpg';
-import cv from '../images/cv.jpg';
-import demarche from '../images/demarche.jpg';
-import { FaFacebookSquare, FaLinkedin, FaInstagramSquare } from 'react-icons/fa';
-import { NavLink as Link } from 'react-router-dom';
-import { SRLWrapper } from 'simple-react-lightbox';
+import archi from '../images/archi.png'
+import aventure from '../images/aventure.png'
+import couture from '../images/couture.png'
+import comedie from '../images/comedie.png'
+import presentation1_thumbnail from '../images/presentation1_thumbnail.jpg'
+import presentation2_thumbnail from '../images/presentation2_thumbnail.jpg'
+import cv_thumbnail from '../images/cv_thumbnail.jpg'
+import demarche_thumbnail from '../images/demarche_thumbnail.jpg'
+import presentation1 from '../images/presentation1.jpg'
+import presentation2 from '../images/presentation2.jpg'
+import cv from '../images/cv.jpg'
+import demarche from '../images/demarche.jpg'
+import { FaFacebookSquare, FaLinkedin, FaInstagramSquare } from 'react-icons/fa'
+import { NavLink as Link } from 'react-router-dom'
+import { SRLWrapper } from 'simple-react-lightbox'
 
 
 const Home = () => {
