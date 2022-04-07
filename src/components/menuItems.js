@@ -5,7 +5,7 @@ export const menuItems = [
     },
     {
         page: '/archi',
-        title: 'Architecture',
+        title: 'Archi',
         submenu: [
             {
                 page: '/archi/jeune-public',

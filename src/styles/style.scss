@@ -344,12 +344,19 @@ nav {
 .menu {
     color: black;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     padding: 15px 5px;
     height: 100%;
     cursor: pointer;
+    & svg {
+        display: flex;
+        position: absolute;
+        top: 1rem;
+        right: 0.3rem;
+    }
     &:focus {
         background: $primary-color;
     }
