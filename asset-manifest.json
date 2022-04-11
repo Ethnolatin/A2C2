@@ -1,9 +1,15 @@
 {
   "files": {
-    "main.css": "/A2C2/static/css/main.51c7d4da.css",
-    "main.js": "/A2C2/static/js/main.5b455477.js",
+    "main.css": "/A2C2/static/css/main.f5206b48.css",
+    "main.js": "/A2C2/static/js/main.679e19f3.js",
+    "static/media/approche6.jpg": "/A2C2/static/media/approche6.59e3e45017b1a65d69bd.jpg",
     "static/media/entete.png": "/A2C2/static/media/entete.53a5c2d0ac60abf3c34a.png",
+    "static/media/approche3.jpg": "/A2C2/static/media/approche3.66bc9947bde44bbbaa0c.jpg",
+    "static/media/approche5.jpg": "/A2C2/static/media/approche5.c07ecb8d8a239300d592.jpg",
     "static/media/cv.jpg": "/A2C2/static/media/cv.e6db5360c3a381fa3c89.jpg",
+    "static/media/approche1.jpg": "/A2C2/static/media/approche1.491326073e53a678af9d.jpg",
+    "static/media/approche2.jpg": "/A2C2/static/media/approche2.c8712e3fe8cb255692b5.jpg",
+    "static/media/approche4.jpg": "/A2C2/static/media/approche4.c63d581299b711609efb.jpg",
     "static/media/presentation2.jpg": "/A2C2/static/media/presentation2.13371cc22264beae237d.jpg",
     "static/media/lettre_archi5.jpg": "/A2C2/static/media/lettre_archi5.aecbfbb789b86188dd5b.jpg",
     "static/media/presentation1.jpg": "/A2C2/static/media/presentation1.986a852af2e429dbb70f.jpg",
@@ -11,17 +17,21 @@
     "static/media/lettre_archi9.jpg": "/A2C2/static/media/lettre_archi9.e7451dc62d7ed571b505.jpg",
     "static/media/lettre_archi10.jpg": "/A2C2/static/media/lettre_archi10.4cea40c190f1c84a05a3.jpg",
     "static/media/lettre_archi6.jpg": "/A2C2/static/media/lettre_archi6.2532b6d51ad3704d6f86.jpg",
+    "static/media/process4.jpg": "/A2C2/static/media/process4.46b79450fae6d2aead1e.jpg",
     "static/media/demarche.jpg": "/A2C2/static/media/demarche.9e9499fb0b9357aa8276.jpg",
     "static/media/lettre_archi2.jpg": "/A2C2/static/media/lettre_archi2.43f5e6a87655158f12eb.jpg",
     "static/media/lettre_archi1.jpg": "/A2C2/static/media/lettre_archi1.55f1165188c7fa19a032.jpg",
     "static/media/lettre_archi7.jpg": "/A2C2/static/media/lettre_archi7.b1dff8e6bee1668d21f6.jpg",
     "static/media/enteteSm.png": "/A2C2/static/media/enteteSm.39e86ace39fb449ba82c.png",
+    "static/media/process1.jpg": "/A2C2/static/media/process1.bdae6c28571d509f7806.jpg",
     "static/media/lettre_archi4.jpg": "/A2C2/static/media/lettre_archi4.183c6b97ee2aa5fe220d.jpg",
     "static/media/carte1.jpg": "/A2C2/static/media/carte1.39341c4a76c89d95e9eb.jpg",
     "static/media/lettre_archi8.jpg": "/A2C2/static/media/lettre_archi8.0bba9fe63f7fc877908c.jpg",
     "static/media/carte2.jpg": "/A2C2/static/media/carte2.c444509f5f8bba533032.jpg",
     "static/media/lettre_archi10_thumbnail.jpg": "/A2C2/static/media/lettre_archi10_thumbnail.9cf863a2db17d0431cc0.jpg",
     "static/media/lettre_archi7_thumbnail.jpg": "/A2C2/static/media/lettre_archi7_thumbnail.77440ec4bd878e10d059.jpg",
+    "static/media/process2.jpg": "/A2C2/static/media/process2.6cb08b67781a616cab37.jpg",
+    "static/media/process3.jpg": "/A2C2/static/media/process3.21208c812abab2f822d2.jpg",
     "static/media/lettre_archi6_thumbnail.jpg": "/A2C2/static/media/lettre_archi6_thumbnail.b4654092ba532e232904.jpg",
     "static/media/lettre_archi9_thumbnail.jpg": "/A2C2/static/media/lettre_archi9_thumbnail.48b9f3110a30dfe2fe44.jpg",
     "static/media/lettre_archi5_thumbnail.jpg": "/A2C2/static/media/lettre_archi5_thumbnail.050fc634676b01f3427f.jpg",
@@ -41,12 +51,13 @@
     "static/media/demarche_thumbnail.jpg": "/A2C2/static/media/demarche_thumbnail.0924f6e5b3803af4bcdf.jpg",
     "static/media/presentation2_thumbnail.jpg": "/A2C2/static/media/presentation2_thumbnail.005e5a4736ba55b9fd7c.jpg",
     "static/media/presentation1_thumbnail.jpg": "/A2C2/static/media/presentation1_thumbnail.1b1d00431431e726a03a.jpg",
+    "static/media/process4_thumbnail.jpg": "/A2C2/static/media/process4_thumbnail.ef100ddbc0902a942121.jpg",
     "index.html": "/A2C2/index.html",
-    "main.51c7d4da.css.map": "/A2C2/static/css/main.51c7d4da.css.map",
-    "main.5b455477.js.map": "/A2C2/static/js/main.5b455477.js.map"
+    "main.f5206b48.css.map": "/A2C2/static/css/main.f5206b48.css.map",
+    "main.679e19f3.js.map": "/A2C2/static/js/main.679e19f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.51c7d4da.css",
-    "static/js/main.5b455477.js"
+    "static/css/main.f5206b48.css",
+    "static/js/main.679e19f3.js"
   ]
 }
