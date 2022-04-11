@@ -202,6 +202,7 @@ hr {
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -269,6 +270,22 @@ hr {
 }
 .letter:hover {
   border-color: #03A5AB;
+}
+
+.process {
+  max-width: calc((100vw - 5rem) / 4);
+  margin: 2px;
+  border: 2px solid transparent;
+}
+.process:hover {
+  border-color: #03A5AB;
+}
+
+.centralColumn {
+  margin: 0 1.5rem;
+}
+.centralColumn p {
+  margin: 0;
 }
 
 .doc {
