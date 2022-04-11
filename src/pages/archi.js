@@ -3,42 +3,10 @@ import carte1 from '../images/carte1.jpg'
 import carte1_thumbnail from '../images/carte1_thumbnail.jpg'
 import carte2 from '../images/carte2.jpg'
 import carte2_thumbnail from '../images/carte2_thumbnail.jpg'
-import lettre_archi1 from '../images/lettre_archi1.jpg'
-import lettre_archi1_thumbnail from '../images/lettre_archi1_thumbnail.jpg'
-import lettre_archi2 from '../images/lettre_archi2.jpg'
-import lettre_archi2_thumbnail from '../images/lettre_archi2_thumbnail.jpg'
-import lettre_archi3 from '../images/lettre_archi3.jpg'
-import lettre_archi3_thumbnail from '../images/lettre_archi3_thumbnail.jpg'
-import lettre_archi4 from '../images/lettre_archi4.jpg'
-import lettre_archi4_thumbnail from '../images/lettre_archi4_thumbnail.jpg'
-import lettre_archi5 from '../images/lettre_archi5.jpg'
-import lettre_archi5_thumbnail from '../images/lettre_archi5_thumbnail.jpg'
-import lettre_archi6 from '../images/lettre_archi6.jpg'
-import lettre_archi6_thumbnail from '../images/lettre_archi6_thumbnail.jpg'
-import lettre_archi7 from '../images/lettre_archi7.jpg'
-import lettre_archi7_thumbnail from '../images/lettre_archi7_thumbnail.jpg'
-import lettre_archi8 from '../images/lettre_archi8.jpg'
-import lettre_archi8_thumbnail from '../images/lettre_archi8_thumbnail.jpg'
-import lettre_archi9 from '../images/lettre_archi9.jpg'
-import lettre_archi9_thumbnail from '../images/lettre_archi9_thumbnail.jpg'
-import lettre_archi10 from '../images/lettre_archi10.jpg'
-import lettre_archi10_thumbnail from '../images/lettre_archi10_thumbnail.jpg'
 import archi_diplomee from '../images/archi_diplomee.jpg'
 import { NavLink as Link } from "react-router-dom"
 import { SRLWrapper } from "simple-react-lightbox"
-
-const letters = [
-    {name: lettre_archi1, thumbnail: lettre_archi1_thumbnail},
-    {name: lettre_archi2, thumbnail: lettre_archi2_thumbnail},
-    {name: lettre_archi3, thumbnail: lettre_archi3_thumbnail},
-    {name: lettre_archi4, thumbnail: lettre_archi4_thumbnail},
-    {name: lettre_archi5, thumbnail: lettre_archi5_thumbnail},
-    {name: lettre_archi6, thumbnail: lettre_archi6_thumbnail},
-    {name: lettre_archi7, thumbnail: lettre_archi7_thumbnail},
-    {name: lettre_archi8, thumbnail: lettre_archi8_thumbnail},
-    {name: lettre_archi9, thumbnail: lettre_archi9_thumbnail},
-    {name: lettre_archi10, thumbnail: lettre_archi10_thumbnail}
-]
+import { letters } from "../components/imagesManagement"
 
 const Archi = () => {
     return (
